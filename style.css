@@ -1,132 +1,178 @@
 :root{
---branco-principal: #FFFFFF;
---cinza-secundario: #C0C0C0;
---botao-azul: #167BF7;
---cor-de-fundo: #00030C;
---fonte-principal: 'Inter';
---botao-azul-efeito: hsl(213, 95%, 66%);
-}
-
-body{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-.principal{
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    text-align: center;
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-items: center;
-}
-.container__botao{
-    background-color: var(--botao-azul);
-    border-radius: .5rem;
-    padding: 1rem;
-    color: var(--branco-principal);
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: hsl(213, 95%, 66%);
+    }
+    
+    body{
+        background-color: var(--cor-de-fundo);
+        color: var(--branco-principal);
+        font-family: var(--fonte-principal);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .principal{
+        background-image: url("img/Background.png");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        text-align: center;
+    }
+    .container{
+        width: 90%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__botao{
+        background-color: var(--botao-azul);
+        border-radius: .5rem;
+        padding: 1rem;
+        color: var(--branco-principal);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 1rem ;
+    }
+    .botao__secundario{
+        background-color: transparent;
+        border: .125rem solid var(--branco-principal);
+    }
+    .container__aviso{
+        font-size: .75rem;
+        color: var(--cinza-secundario);
+    }
+    .container__titulo{
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    .container__img{
+        margin: 1rem 0 2rem 0;
+    }
+    .container__caixa{
+        margin: 0 6rem;
+    }
+    
+    .secundario__img{
+        width: 70%;
+        justify-self: center;
+    }
+    .secundario{
+        align-items: center;
+    }
+    .descricao__titulo{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: .3rem;
+    }
+    .descricao__texto{
+        color: var(--cinza-secundario);
+    }
+    .telas__texto{
+        color: var(--cinza-secundario);
+    }
+    .secundario__botao{
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    .container__descricao{
+        padding: 2rem;
+    }
+    .dispositivos{
+        text-align: center;
+    }
+    .dispositivos__lista{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 5rem 0;
+    }
+    .dispositivos__titulo{
+        font-size: 3rem;
+        color: var(--branco-principal);
+    }
+    .lista__item{
+        font-size: 2rem;
+        color: var(--branco-principal)
+    }
+    .rodape{
+        text-align: center;
+    }
+    .rodape__logo{
+        margin-bottom: 3rem;
+    }
+    .lista__link{
+        display: inline;
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+    .lista__link a{
     text-decoration: none;
-    display: block;
-    margin-bottom: 1rem ;
-}
-.botao__secundario{
-    background-color: transparent;
-    border: .125rem solid var(--branco-principal);
-}
-.container__aviso{
-    font-size: .75rem;
-    color: var(--cinza-secundario);
-}
-.container__titulo{
-    font-size: 1.75rem;
-    font-weight: 700;
-}
-.container__img{
-    margin: 1rem 0 2rem 0;
-}
-.container__caixa{
-    margin: 0 6rem;
-}
-
-.secundario__img{
-    width: 70%;
-    justify-self: center;
-}
-.secundario{
-    align-items: center;
-}
-.descricao__titulo{
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: .3rem;
-}
-.descricao__texto{
-    color: var(--cinza-secundario);
-}
-.telas__texto{
-    color: var(--cinza-secundario);
-}
-.secundario__botao{
-    display: inline-block;
-    margin-top: 1rem;
-}
-.container__descricao{
-    padding: 2rem;
-}
-.dispositivos{
-    text-align: center;
-}
-.dispositivos__lista{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 5rem 0;
-}
-.dispositivos__titulo{
-    font-size: 3rem;
     color: var(--branco-principal);
-}
-.lista__item{
-    font-size: 2rem;
-    color: var(--branco-principal)
-}
-.rodape{
-    text-align: center;
-}
-.rodape__logo{
-    margin-bottom: 3rem;
-}
-.lista__link{
-    display: inline;
-    margin: 0 1rem;
-    font-size: 1rem;
-}
-.lista__link a{
-text-decoration: none;
-color: var(--branco-principal);
-} 
-.rodape__texto{
-    font-size: .875rem;
-    color: var(--cinza-secundario);
-    margin: 2rem 0;
-}
-.lista__link a:hover{
-    color: var(--botao-azul);
-}
-.container__botao:hover{
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
-}
+    } 
+    .rodape__texto{
+        font-size: .875rem;
+        color: var(--cinza-secundario);
+        margin: 2rem 0;
+    }
+    .lista__link a:hover{
+        color: var(--botao-azul);
+    }
+    .container__botao:hover{
+        background-color: var(--botao-azul-efeito);
+        color: var(--cor-de-fundo);
+    }
+    @media screen and (max-width:920px) {
+        body{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container{
+            width: 95%;
+            background-size: 100%;
+            grid-template-columns: 1fr;
+    
+        }
+        .principal{
+            background-image: url(img/Background_mobile.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: grid;
+        }
+        .container__caixa{
+            height: 100vh;
+            margin-top: 15rem;
+        }
+        .dispositivos__lista{
+            display: flex;
+            flex-direction: column;
+        }
+        .secundario__img-mobile{
+            grid-area: 1;
+        }
+        .descricao__mobile{
+            grid-area: 2;
+        }
+        .dispositivos h2, .secundario h2{
+            font-size: 2rem;
+        }
+        .lista__item{
+            font-size: 1.5rem;
+        }
+        .lista__link{
+            display: block;
+            margin: 1rem 0;
+        }
+    }
